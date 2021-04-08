@@ -1,0 +1,469 @@
+@font-face {
+    font-family: 'Lemon Tuesday Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lemon Tuesday Regular'), url('/fonts/Lemon\ Tuesday.woff') format('woff');
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "open sans";
+    --theme-green: rgb(132, 198, 4);
+    --theme-orange: rgb(253, 79, 16);
+    --theme-darker-green: rgb(31, 186, 10);
+    box-sizing: border-box;
+}
+
+.header {
+    height: 130px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.header p {
+    font-size: 0.8em;
+}
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    background-color: rgb(26, 45, 52);
+}
+.container {
+    min-width: 1070px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.contacts {
+    font-size: 14px;
+}
+.contacts > i {
+    color: rgb(31, 186, 10);
+    font-size: 17px;
+}
+
+.callback {
+    border: 1px solid var(--theme-darker-green);
+    font-size: 14px;
+    color: var(--theme-darker-green);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.15s ease-out;
+}
+.callback:hover{
+    background-color: var(--theme-darker-green);
+    color: white;
+}
+.btn-row {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn {
+    text-align: center;
+    background-attachment: white;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    flex-basis: 100px;
+    flex-grow: 1;
+    height: 41px;
+    transition: all 0.15s ease-out
+}
+.btn:hover {
+    background-color: rgb(132, 198, 4);
+    color: white;
+}
+.orders {
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    position: relative;
+    left: -125px;
+    top: -6px;
+}
+
+.down_arrow {
+    transform: scaleX(2);
+    font-size: 0.6em;
+    
+}
+
+.row {
+    border-bottom: 1px solid rgb(242, 242, 242);
+    padding: 10px 0 10px 0;
+}
+.fullsize {
+    margin-top: 130px;
+    width: 100%;
+    height: 600px;
+    background-image: url('/img/big_sushi_image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.happy-hours {
+    font-family: "Lemon Tuesday Regular";
+    color: var(--theme-green);
+    line-height: 90px;
+    font-size: 100px;
+    width: 480px;
+    padding-top: 105px;
+}
+.discount img {
+    position: relative;
+    top: 82px;
+    left: 119px;
+}
+.discount p {
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 120px;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: -27px;
+    left: 127px;
+}
+.discount-block > p {
+    color: white;
+    font-style: italic;
+    font-size: 26px;
+}
+.orange-button {
+    text-decoration: none;
+}
+.button-body {
+    background-color: var(--theme-orange);
+    width: 50%;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.15s ease-out;  
+}
+.button-body:hover {
+    background-color: rgb(200, 53, 0);
+}
+.menu {
+    flex-direction: column;
+}
+.menu-label {
+    font-family: "Lemon Tuesday Regular";
+    font-size: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(50, 80, 90);
+}
+
+.product-card {
+    height: 461px;
+    width: 263px;
+    border: 15px solid rgb(251, 251, 251);
+    border-radius: 10px;
+    flex-direction: column;
+    background-image: url('/img/product_card.png');
+    background-position: center;
+    overflow: hidden;
+}
+.food-container {
+    width: 233px;
+    height: 190px;
+    border-radius: 10px;
+}
+.food-container img {
+    width: 100%;
+}
+.lower {
+    text-align: center;
+    width: 81%;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 200px;
+}
+.lower p {
+    font-weight: 400;
+    font-size: 80%;
+}
+.lower select {
+    background:rgb(242, 242, 242);
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+.price-block {
+    font-weight: 700;
+}
+.amount {
+    font-size: 125%;
+    font-family: "Roboto Slab";
+    margin-right: 5px;
+}
+.currency {
+    font-size: 90%;
+    font-family: "Roboto Slab";
+}
+.quantity-block {
+    width: 65px;
+}
+.quantity-block i {
+    color: rgb(128, 128, 128);
+}
+.quantity-block span {
+    font-size: 12px;
+}
+.btn-into-cart {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--theme-orange);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.15s ease-out;
+}
+.btn-into-cart:hover {
+    background-color: rgb(200, 53, 0);
+}
+.points {
+    width: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.point-green {
+    background-color: var(--theme-green);
+}
+.point-gray {
+    background-color: rgb(179, 179, 179);
+}
+.special-marker {
+    position: absolute;
+    top: 150px;
+}
+.first {
+    left: 165px;
+}
+.second {
+    left: 427px;
+}
+.third {
+    left: 695px;
+}
+.fourth {
+    left: 960px;
+}
+.special-second {
+    top: 38px;
+    left: 494px;
+}
+.add-price {
+    font-size: 10px;
+}
+.addition i {
+    color: var(--theme-orange);
+}
+.addition > .val {
+    position: absolute;
+    top: 0px;
+    left: 81px;
+}
+.special-part {
+    margin-top: 70px;
+    width: 100%;
+    height: 650px;
+    background-image: url('/img/special_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.special-part .new {
+    position: absolute;
+    font-weight: 700;
+    transform: rotate(-45deg);
+    color: white;
+    top: 15px;
+    left: 6px;
+}
+.special-links {
+    margin: 20px 0 20px 75px;
+}
+.special-links a {
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 50px;
+    color: rgb(192, 192, 192);
+    transition: all 0.15s ease-out;
+}
+.special-links a[class="active"] {
+    color: var(--theme-orange);
+}
+.special-links a:hover {
+    color: var(--theme-orange);
+}
+.reasons {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.reason {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+}
+.reason p {
+    color: rgb(77, 77, 77);
+    line-height: 200%;
+    margin-top: 20%;
+}
+.leave-contacts {
+    margin-top: 70px;
+    width: 100%;
+    height: 300px;
+    background-image: url('/img/leave_your_contacts_bar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    color: white;
+}
+.leave-contacts-label {
+    font-family: "Lemon Tuesday Regular";
+    color: white;
+    line-height: 90px;
+    font-size: 50px;
+}
+.contact-container {
+    width: 65%;
+}
+.contact-container input {
+    padding: 5px;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    transition: all 0.15s ease-out;
+}
+.contact-container input:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.form-item {
+    width: 30%;
+}
+.small {
+    padding-top: 3em;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+.description {
+    width: 70%;
+}
+.description h2 {
+    color:rgb(50, 80, 90);
+    padding-bottom: 20px;
+}
+.description p {
+    font-size: 0.9em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.about-company {
+    margin-bottom: 100px;
+}
+.footer-upper {
+    margin-top: 50px;
+}
+.footer-upper p {
+    margin-bottom: 5px;
+    color: white;
+    font-size: 0.8em;
+}
+.ul {
+    list-style: none;
+    line-height: 180%;
+    color: white;
+    font-size: 0.8em;
+}
+.ul-dusk {
+    font-size: 0.6em;
+    line-height: 230%;
+    color:rgb(107, 150, 165)
+}
+.footer-lower {
+    color: rgb(107, 150, 165);
+    font-size: 0.8em;
+}
+.footer-lower a {
+    color: rgb(107, 150, 165);
+}
+.social {
+    width: 7%;
+}
+.social i {
+    font-size: 1.2em;
+}
+
+
+
+.d-flex {display: flex;}
+.align-items-baseline {align-items: baseline;}
+.align-items-stretch {align-items: stretch;}
+.align-content-center {align-content: center;}
+.align-items-end {align-items: flex-end;}
+.align-items-center {align-items: center;}
+.justify-content-center {justify-content: center;}
+.justify-content-around {justify-content: space-around;}
+.justify-content-between {justify-content: space-between;}
+.justify-content-evenly{justify-content: space-evenly;}
+.justify-content-end {justify-content: flex-end}
+.ml1 {margin-left: 1em}
+.ml2 {margin-left: 2em}
+.ml3 {margin-left: 3em}
+.ml4 {margin-left: 4em}
+.ml5 {margin-left: 5em}
+.mr1 {margin-right: 1em}
+.mr2 {margin-right: 2em}
+.mr3 {margin-right: 3em}
+.mr4 {margin-right: 4em}
+.mr5 {margin-right: 5em}
+.mt0 {margin-top: 0}
+.mt1 {margin-top: 1em}
+.mt2 {margin-top: 2em}
+.mt3 {margin-top: 3em}
+.mt4 {margin-top: 4em}
+.mt5 {margin-top: 5em}
+.mb1 {margin-bottom: 1em}
+.mb2 {margin-bottom: 2em}
+.mb3 {margin-bottom: 3em}
+.mb4 {margin-bottom: 4em}
+.mb5 {margin-bottom: 5em}
+.pf {position: fixed}
+.pr {position: relative}
+.pa {position: absolute}
+.fd-column {flex-direction: column;}
