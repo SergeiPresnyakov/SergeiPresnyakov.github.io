@@ -4,6 +4,7 @@
     font-weight: normal;
     src: local('Lemon Tuesday Regular'), url('/fonts/Lemon\ Tuesday.woff') format('woff');
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -25,9 +26,11 @@
     top: 0;
     left: 0;
 }
+
 .header p {
     font-size: 0.8em;
 }
+
 .footer {
     position: relative;
     left: 0;
@@ -36,6 +39,7 @@
     height: 350px;
     background-color: rgb(26, 45, 52);
 }
+
 .container {
     min-width: 1070px;
     max-width: 1170px;
@@ -44,6 +48,7 @@
 .contacts {
     font-size: 14px;
 }
+
 .contacts > i {
     color: rgb(31, 186, 10);
     font-size: 17px;
@@ -59,15 +64,18 @@
     padding: 10px;
     transition: all 0.15s ease-out;
 }
+
 .callback:hover{
     background-color: var(--theme-darker-green);
     color: white;
 }
+
 .btn-row {
     list-style: none;
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .btn {
     text-align: center;
     background-attachment: white;
@@ -82,10 +90,12 @@
     height: 41px;
     transition: all 0.15s ease-out
 }
+
 .btn:hover {
     background-color: rgb(132, 198, 4);
     color: white;
 }
+
 .orders {
     background-color: red;
     color: white;
@@ -99,6 +109,7 @@
     left: -125px;
     top: -6px;
 }
+
 .fa-chevron-down {
     position: absolute;
     top: 13px;
@@ -109,6 +120,7 @@
     border-bottom: 1px solid rgb(242, 242, 242);
     padding: 10px 0 10px 0;
 }
+
 .fullsize {
     margin-top: 130px;
     width: 100%;
@@ -119,6 +131,7 @@
     background-position: center;
     overflow: hidden;
 }
+
 .happy-hours {
     font-family: "Lemon Tuesday Regular";
     color: var(--theme-green);
@@ -127,11 +140,13 @@
     width: 480px;
     padding-top: 105px;
 }
+
 .discount img {
     position: relative;
     top: 82px;
     left: 119px;
 }
+
 .discount p {
     font-size: 1.5em;
     font-weight: 700;
@@ -142,14 +157,17 @@
     top: -27px;
     left: 127px;
 }
+
 .discount-block > p {
     color: white;
     font-style: italic;
     font-size: 26px;
 }
+
 .orange-button {
     text-decoration: none;
 }
+
 .button-body {
     background-color: var(--theme-orange);
     width: 50%;
@@ -160,12 +178,15 @@
     text-align: center;
     transition: all 0.15s ease-out;  
 }
+
 .button-body:hover {
     background-color: rgb(200, 53, 0);
 }
+
 .menu {
     flex-direction: column;
 }
+
 .menu-label {
     font-family: "Lemon Tuesday Regular";
     font-size: 45px;
@@ -184,14 +205,17 @@
     background-position: center;
     overflow: hidden;
 }
+
 .food-container {
     width: 233px;
     height: 190px;
     border-radius: 10px;
 }
+
 .food-container img {
     width: 100%;
 }
+
 .lower {
     text-align: center;
     width: 81%;
@@ -199,40 +223,49 @@
     flex-direction: column;
     height: 200px;
 }
+
 .lower p {
     font-weight: 400;
     font-size: 80%;
 }
+
 .lower select {
     background:rgb(242, 242, 242);
     padding: 3px;
     border: none;
     border-radius: 5px;
 }
+
 .price-block {
     font-weight: 700;
 }
+
 .amount {
     font-size: 125%;
     font-family: "Roboto Slab";
     margin-right: 5px;
 }
+
 .currency {
     font-size: 90%;
     font-family: "Roboto Slab";
 }
+
 .quantity-block {
     width: 65px;
 }
+
 .quantity-block i {
     cursor: pointer;
     color: rgb(128, 128, 128);
     transition: all 0.15s ease-out;
 }
+
 .fa-plus-square {
     cursor: pointer;
     transition: all 0.15s ease-out;
 }
+
 .fa-plus-square:hover {
     color:rgb(200, 53, 0);
 }
@@ -240,9 +273,11 @@
 .quantity-block i:hover {
     color: var(--theme-orange);
 }
+
 .quantity-block span {
     font-size: 12px;
 }
+
 .btn-into-cart {
     text-decoration: none;
     text-align: center;
@@ -253,61 +288,77 @@
     border-radius: 5px;
     transition: all 0.15s ease-out;
 }
+
 .btn-into-cart:hover {
     background-color: rgb(200, 53, 0);
 }
+
 .points {
     width: 150px;
     margin-left: 40px;
     margin-right: 40px;
 }
+
 .point {
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
+
 .point-green {
     background-color: var(--theme-green);
 }
+
 .point-gray {
     background-color: rgb(179, 179, 179);
     transition: all 0.15s ease-out;
     cursor: pointer;
 }
+
 .point-gray:hover {
     background-color: var(--theme-green);
 }
+
 .special-marker {
     position: absolute;
     top: 150px;
 }
+
 .first {
     left: 165px;
 }
+
 .second {
     left: 427px;
 }
+
 .third {
     left: 695px;
 }
+
 .fourth {
     left: 960px;
 }
+
 .special-second {
     top: 38px;
     left: 494px;
 }
+
 .add-price {
     font-size: 10px;
 }
+
 .addition i {
     color: var(--theme-orange);
 }
+
 .addition > .val {
     position: absolute;
     top: 0px;
     left: 81px;
 }
+
 .special-part {
     margin-top: 70px;
     width: 100%;
@@ -318,6 +369,7 @@
     background-position: center;
     overflow: hidden;
 }
+
 .special-part .new {
     position: absolute;
     font-weight: 700;
@@ -326,9 +378,11 @@
     top: 15px;
     left: 6px;
 }
+
 .special-links {
     margin: 20px 0 20px 75px;
 }
+
 .special-links a {
     text-decoration: none;
     font-weight: 700;
@@ -336,17 +390,21 @@
     color: var(--theme-ligth-gray);
     transition: all 0.15s ease-out;
 }
+
 .special-links a[class="active"] {
     color: var(--theme-orange);
 }
+
 .special-links a:hover {
     color: var(--theme-orange);
 }
+
 .reasons {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
 }
+
 .reason {
     width: 17%;
     display: flex;
@@ -355,11 +413,13 @@
     text-align: center;
     margin-top: 3%;
 }
+
 .reason p {
     color: rgb(77, 77, 77);
     line-height: 200%;
     margin-top: 20%;
 }
+
 .leave-contacts {
     margin-top: 70px;
     width: 100%;
@@ -371,15 +431,18 @@
     overflow: hidden;
     color: white;
 }
+
 .leave-contacts-label {
     font-family: "Lemon Tuesday Regular";
     color: white;
     line-height: 90px;
     font-size: 50px;
 }
+
 .contact-container {
     width: 65%;
 }
+
 .contact-container input {
     padding: 5px;
     color: white;
@@ -389,70 +452,87 @@
     outline: none;
     transition: all 0.15s ease-out;
 }
+
 .contact-container input:focus {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 .form-item {
     width: 30%;
 }
+
 .small {
     padding-top: 3em;
     font-size: 0.8em;
     font-weight: 400;
 }
+
 .description {
     width: 70%;
 }
+
 .description h2 {
     color:rgb(50, 80, 90);
     padding-bottom: 20px;
 }
+
 .description p {
     font-size: 0.9em;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .about-company {
     margin-bottom: 100px;
 }
+
 .footer-upper {
     margin-top: 50px;
 }
+
 .footer-upper p {
     margin-bottom: 5px;
     color: white;
     font-size: 0.8em;
 }
+
 .ul {
     list-style: none;
     line-height: 180%;
     color: white;
     font-size: 0.8em;
 }
+
 .ul-dusk {
     font-size: 0.6em;
     line-height: 230%;
     color:rgb(107, 150, 165)
 }
+
 .footer-lower {
     color: rgb(107, 150, 165);
     font-size: 0.8em;
 }
+
 .footer-lower a {
     color: rgb(107, 150, 165);
 }
+
 .social {
     width: 7%;
 }
+
 .social i {
     font-size: 1.2em;
 }
+
 .left_arrow_hover {
     cursor: pointer;
     position: absolute;
     opacity: 0;
     transition: opacity 0.15s ease-out;
 }
+
 .right_arrow_hover {
     cursor: pointer;
     position: absolute;
@@ -460,6 +540,7 @@
     opacity: 0;
     transition: opacity 0.15s ease-out;
 }
+
 .right_arrow_hover:hover,
 .left_arrow_hover:hover {
     opacity: 1;
@@ -470,27 +551,31 @@
     cursor: pointer;
     transition: all 0.15s ease-out;
 }
+
 .footer_orange_hover:hover {
     color: var(--theme-orange);
 }
+
 .footer_light_hover:hover {
     color:rgb(206, 239, 251);
 }
+
 .left_slider_btn {
     position: absolute;
     bottom: 278px;
     left: 120px;
 }
+
 .right_slider_btn {
     position: absolute;
     bottom: 278px;
     right: 120px;
 }
+
 .discount_pagination {
     width: 150px;
     margin: 0 auto;
 }
-
 
 .d-flex {display: flex;}
 .align-items-baseline {align-items: baseline;}
