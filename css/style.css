@@ -11,6 +11,8 @@
     --theme-green: rgb(132, 198, 4);
     --theme-orange: rgb(253, 79, 16);
     --theme-darker-green: rgb(31, 186, 10);
+    --theme-ligth-gray: rgb(191, 191, 191);
+    --theme-dark-gray: rgb(128, 128, 128);
     box-sizing: border-box;
 }
 
@@ -225,6 +227,10 @@
 }
 .quantity-block i {
     color: rgb(128, 128, 128);
+    transition: all 0.15s ease-out;
+}
+.quantity-block i:hover {
+    color: var(--theme-orange);
 }
 .quantity-block span {
     font-size: 12px;
@@ -257,6 +263,11 @@
 }
 .point-gray {
     background-color: rgb(179, 179, 179);
+    transition: all 0.15s ease-out;
+    cursor: pointer;
+}
+.point-gray:hover {
+    background-color: var(--theme-green);
 }
 .special-marker {
     position: absolute;
@@ -314,7 +325,7 @@
     text-decoration: none;
     font-weight: 700;
     margin-right: 50px;
-    color: rgb(192, 192, 192);
+    color: var(--theme-ligth-gray);
     transition: all 0.15s ease-out;
 }
 .special-links a[class="active"] {
@@ -427,6 +438,35 @@
 }
 .social i {
     font-size: 1.2em;
+}
+.left_arrow_hover {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.15s ease-out;
+}
+.right_arrow_hover {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+    transition: opacity 0.15s ease-out;
+}
+.right_arrow_hover:hover,
+.left_arrow_hover:hover {
+    opacity: 1;
+}
+
+.footer_light_hover,
+.footer_orange_hover {
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+}
+.footer_orange_hover:hover {
+    color: var(--theme-orange);
+}
+.footer_light_hover:hover {
+    color:rgb(206, 239, 251);
 }
 
 
