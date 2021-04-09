@@ -99,11 +99,10 @@
     left: -125px;
     top: -6px;
 }
-
-.down_arrow {
-    transform: scaleX(2);
-    font-size: 0.6em;
-    
+.fa-chevron-down {
+    position: absolute;
+    top: 13px;
+    left: 113px;
 }
 
 .row {
