@@ -477,6 +477,16 @@
 .footer_light_hover:hover {
     color:rgb(206, 239, 251);
 }
+.left_slider_btn {
+    position: absolute;
+    bottom: 278px;
+    left: 120px;
+}
+.right_slider_btn {
+    position: absolute;
+    bottom: 278px;
+    right: 120px;
+}
 
 
 
