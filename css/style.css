@@ -226,9 +226,18 @@
     width: 65px;
 }
 .quantity-block i {
+    cursor: pointer;
     color: rgb(128, 128, 128);
     transition: all 0.15s ease-out;
 }
+.fa-plus-square {
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+}
+.fa-plus-square:hover {
+    color:rgb(200, 53, 0);
+}
+
 .quantity-block i:hover {
     color: var(--theme-orange);
 }
