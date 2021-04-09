@@ -487,7 +487,10 @@
     bottom: 278px;
     right: 120px;
 }
-
+.discount_pagination {
+    width: 150px;
+    margin: 0 auto;
+}
 
 
 .d-flex {display: flex;}
