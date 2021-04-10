@@ -85,9 +85,9 @@
     color: black;
     font-size: 14px;
     font-weight: 600;
-    flex-basis: 100px;
-    flex-grow: 1;
-    height: 41px;
+    flex-grow: 1; 
+    padding: auto;
+    height: 40px;
     transition: all 0.15s ease-out
 }
 
@@ -107,13 +107,13 @@
     border-radius: 2px;
     position: relative;
     left: -125px;
-    top: -6px;
+    top: 7px;
 }
 
 .fa-chevron-down {
     position: absolute;
     top: 13px;
-    left: 113px;
+    left: 92px;
 }
 
 .row {
