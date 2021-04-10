@@ -85,9 +85,7 @@
     color: black;
     font-size: 14px;
     font-weight: 600;
-    flex-grow: 1; 
-    padding: auto;
-    height: 40px;
+    flex: 1 1 auto;
     transition: all 0.15s ease-out
 }
 
