@@ -31,23 +31,52 @@ function additionBlockActivate(block) {
 }
 
 
+function intoThree(num) {
+    if (num < 10) {
+        return '00' + num;
+    } else if (num < 100) {
+        return '0' + num;
+    }
+    return num;
+}
+
+
 function activateProductCard(card) {
     let plusButton = card.querySelector('.fa-plus-circle');
     let minusButton = card.querySelector('.fa-minus-circle');
     let valueField = card.querySelector('span');
+    let productPriceBlock = card.querySelector('.price-block > .amount');
+    let productPrice = parseInt(productPriceBlock.innerHTML.replace(' ', ''));
+    const basePrice = productPrice;
     let value = parseInt(valueField.innerHTML);
 
     plusButton.addEventListener('click', () => {
         value++;
+        productPrice += basePrice;
+
+        if (productPrice > 999) {
+            productPriceBlock.innerHTML = Math.floor(productPrice / 1000) + ' ' + intoThree(productPrice % 1000);
+        } else {
+            productPriceBlock.innerHTML = productPrice;
+        }
+        
         valueField.innerHTML = value;
     });
 
     minusButton.addEventListener('click', () => {
         if (value > 1) {
+            productPrice -= basePrice;
             value--;
         }
+
+        if (productPrice > 999) {
+            productPriceBlock.innerHTML = Math.floor(productPrice / 1000) + ' ' + intoThree(productPrice % 1000);
+        } else {
+            productPriceBlock.innerHTML = productPrice;
+        }
+
         valueField.innerHTML = value;
-    })
+    });
 
     const additionBlock = card.querySelector('.addition');
     if (additionBlock !== null) {
