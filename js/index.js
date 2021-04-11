@@ -30,7 +30,7 @@ function additionBlockActivate(block) {
     });
 }
 
-//
+
 function activateProductCard(card) {
     let plusButton = card.querySelector('.fa-plus-circle');
     let minusButton = card.querySelector('.fa-minus-circle');
