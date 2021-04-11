@@ -18,14 +18,14 @@ function additionBlockActivate(block) {
     plusButton.addEventListener('click', () => {
         sauceAmountValue++;
         saucePrice += 70;
-        sauceAmountField.innerHTML = sauceAmountValue;
+        sauceAmountField.innerHTML = '+' + sauceAmountValue;
         saucePriceField.innerHTML = saucePrice;
     });
 
     nullifyButton.addEventListener('click', () => {
         sauceAmountValue = 0;
         saucePrice = 0;
-        sauceAmountField.innerHTML = sauceAmountValue;
+        sauceAmountField.innerHTML = '+' + sauceAmountValue;
         saucePriceField.innerHTML = saucePrice;
     });
 }
