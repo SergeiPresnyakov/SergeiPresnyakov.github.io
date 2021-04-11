@@ -357,6 +357,13 @@
     left: 81px;
 }
 
+.add_nullify {
+    position: absolute;
+    cursor: pointer;
+    top: 6px;
+    left: 102px;
+}
+
 .special-part {
     margin-top: 70px;
     width: 100%;
