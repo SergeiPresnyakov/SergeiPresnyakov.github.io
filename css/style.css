@@ -167,10 +167,11 @@
 }
 
 .button-body {
+    font-size: 14px;
     background-color: var(--theme-orange);
     width: 50%;
     border-radius: 4px;
-    padding: 10px;
+    padding: 15px;
     color: white;
     text-transform: uppercase;
     text-align: center;
@@ -194,21 +195,53 @@
 }
 
 .product-card {
-    height: 461px;
-    width: 263px;
-    border: 15px solid rgb(251, 251, 251);
+    height: 436px;
+    width: 233px;
     border-radius: 10px;
     flex-direction: column;
-    background-image: url('/img/product_card.png');
-    background-position: center;
-    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgb(230, 230, 230);
 }
-
+.card-wok {
+    height: 474px;
+}
 .food-container {
     width: 233px;
     height: 190px;
     border-radius: 10px;
 }
+.sauce {
+    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    
+}
+.dropdown {
+    width: 100%;
+}
+.sauce:focus,
+.sauce:checked {
+    border: none;
+    outline: none;
+}
+.dropdown_btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.dropdown img {
+    pointer-events:none;
+}
+.lower select {
+    background:rgb(242, 242, 242);
+    padding: 4px;
+    padding-left: 7px;
+    border: none;
+    border-radius: 3px;
+}
+
 
 .food-container img {
     width: 100%;
@@ -219,19 +252,13 @@
     width: 81%;
     margin: 0 auto;
     flex-direction: column;
-    height: 200px;
+    padding-bottom: 30px;
+    height: 100%;
 }
 
 .lower p {
     font-weight: 400;
     font-size: 80%;
-}
-
-.lower select {
-    background:rgb(242, 242, 242);
-    padding: 3px;
-    border: none;
-    border-radius: 5px;
 }
 
 .price-block {
@@ -277,6 +304,8 @@
 }
 
 .btn-into-cart {
+    font-size: 13px;
+    letter-spacing: 1px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -286,10 +315,18 @@
     border-radius: 5px;
     transition: all 0.15s ease-out;
 }
+.cart__button-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 133px;
+    margin: 0 auto;
+}
 
 .btn-into-cart:hover {
     background-color: rgb(200, 53, 0);
 }
+
 
 .points {
     width: 150px;
