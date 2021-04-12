@@ -404,7 +404,7 @@
 .special-part {
     margin-top: 70px;
     width: 100%;
-    height: 650px;
+    height: 700px;
     background-image: url('/img/special_background.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -422,7 +422,7 @@
 }
 
 .special-links {
-    margin: 20px 0 20px 75px;
+    margin: 50px 0 50px 75px;
 }
 
 .special-links a {
@@ -445,6 +445,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 80px;
 }
 
 .reason {
@@ -464,6 +465,7 @@
 
 .leave-contacts {
     margin-top: 70px;
+    margin-bottom: 70px;
     width: 100%;
     height: 300px;
     background-image: url('/img/leave_your_contacts_bar.png');
@@ -525,7 +527,10 @@
 }
 
 .about-company {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+}
+.about_label {
+    margin-bottom: 50px;
 }
 
 .footer-upper {
