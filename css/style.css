@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     font-family: "open sans";
+ 
     --theme-green: rgb(132, 198, 4);
     --theme-orange: rgb(253, 79, 16);
     --theme-darker-green: rgb(31, 186, 10);
@@ -238,8 +239,9 @@
 }
 .lower select {
     background:rgb(242, 242, 242);
-    padding: 4px;
+    padding: 5px;
     padding-left: 7px;
+    font-size: 0.7em;
     border: none;
     border-radius: 3px;
 }
@@ -285,17 +287,17 @@
 .btn_minus {
     cursor: pointer;
     position: absolute;
-    width: 13px;
-    height: 13px;
-    top: 2px;
+    width: 16px;
+    height: 16px;
+    top: 3px;
     left: 0px;
 }
 .btn_plus {
     cursor: pointer;
     position: absolute;
-    width: 13px;
-    height: 13px;
-    top: 2px;
+    width: 16px;
+    height: 16px;
+    top: 3px;
     right: 0px;
 }
 .btn_minus img,
@@ -329,7 +331,7 @@
 }
 
 .quantity-block span {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .btn-into-cart {
@@ -417,25 +419,45 @@
     left: 494px;
 }
 
-.add-price {
-    font-size: 10px;
+.small_amount {
+    font-family: "open sans";
+    font-size: 0.9em;
 }
+.small_currency {
+    font-family: "open sans";
+    font-size: 0.6em;
+}
+
 
 .addition i {
     color: var(--theme-orange);
+    font-size: 20px;
 }
 
 .addition > .val {
     position: absolute;
     top: 0px;
-    left: 81px;
+    left: 74px;
+}
+
+.addition p {
+    font-size: 0.8em;
 }
 
 .add_nullify {
     position: absolute;
     cursor: pointer;
     top: 6px;
-    left: 102px;
+    left: 97px;
+}
+.add_sauce_placeholder {
+    width: 40px;
+    height: 20px;
+}
+.add_sauce_block {
+    position: absolute;
+    top: 0px;
+    left: 69px;
 }
 
 .special-part {
