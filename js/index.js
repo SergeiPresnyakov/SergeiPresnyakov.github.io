@@ -42,8 +42,8 @@ function intoThree(num) {
 
 
 function activateProductCard(card) {
-    let plusButton = card.querySelector('.fa-plus-circle');
-    let minusButton = card.querySelector('.fa-minus-circle');
+    let plusButton = card.querySelector('.btn_plus_block');
+    let minusButton = card.querySelector('.btn_minus_block');
     let valueField = card.querySelector('span');
     let productPriceBlock = card.querySelector('.price-block > .amount');
     let productPrice = parseInt(productPriceBlock.innerHTML.replace(' ', ''));
