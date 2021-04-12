@@ -28,7 +28,7 @@
 }
 
 .header p {
-    font-size: 0.8em;
+    font-size: 0.65em;
 }
 
 .footer {
@@ -52,16 +52,18 @@
 .contacts > i {
     color: rgb(31, 186, 10);
     font-size: 17px;
+    margin-right: 10px;
 }
 
 .callback {
     border: 1px solid var(--theme-darker-green);
+    letter-spacing: 1px;
     font-size: 14px;
     color: var(--theme-darker-green);
     border-radius: 5px;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     transition: all 0.15s ease-out;
 }
 
@@ -77,6 +79,7 @@
 }
 
 .btn {
+    letter-spacing: 1px;
     text-align: center;
     background-attachment: white;
     line-height: 40px;
@@ -108,10 +111,8 @@
     top: 7px;
 }
 
-.fa-chevron-down {
-    position: absolute;
-    top: 13px;
-    left: 92px;
+.fa-chevron-down { 
+    font-size: 10px;
 }
 
 .row {
@@ -168,6 +169,7 @@
 
 .button-body {
     font-size: 14px;
+    letter-spacing: 1px;
     background-color: var(--theme-orange);
     width: 50%;
     border-radius: 4px;
@@ -531,6 +533,11 @@
     outline: none;
     transition: all 0.15s ease-out;
 }
+.contact-container p {
+    position: relative;
+    top: 13px;
+    left: 0px;
+}
 
 .contact-container input:focus {
     background-color: rgba(255, 255, 255, 0.1);
@@ -593,19 +600,16 @@
 
 .footer-lower {
     color: rgb(107, 150, 165);
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 .footer-lower a {
     color: rgb(107, 150, 165);
+    margin-left: 100px;
 }
 
 .social {
-    width: 7%;
-}
-
-.social i {
-    font-size: 1.2em;
+    width: 10%;
 }
 
 .left_arrow_hover {
@@ -655,8 +659,18 @@
 }
 
 .discount_pagination {
-    width: 150px;
+    width: 100px;
     margin: 0 auto;
+    margin-top: 60px !important;
+}
+
+.social_hover {
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+    opacity: 0.65;
+}
+.social_hover:hover {
+    opacity: 1;
 }
 
 .d-flex {display: flex;}
@@ -695,3 +709,9 @@
 .pr {position: relative}
 .pa {position: absolute}
 .fd-column {flex-direction: column;}
+.w100p {width: 100%;}
+.w80p {width: 80%;}
+.w70p {width: 70%;}
+.w60p {width: 60%;}
+.w40p {width: 40%;}
+.w20p {width: 20%;}
