@@ -387,11 +387,18 @@
 }
 
 .first {
-    left: 165px;
+    left: 185px;
+    top: 128px;
 }
 
 .second {
-    left: 427px;
+    left: 459px;
+    top: 128px;
+}
+.second_new {
+    top: 12px;
+    left: 509px;
+    z-index: 1;
 }
 
 .third {
@@ -399,7 +406,8 @@
 }
 
 .fourth {
-    left: 960px;
+    right: 32px;
+    top: 128px;
 }
 
 .special-second {
