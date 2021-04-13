@@ -145,6 +145,33 @@
     object-fit: cover;
 }
 
+/* discount pagination */
+.discount_pagination {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.d_page_radio {
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border: 2px solid rgb(194, 194, 194);
+    border-radius: 50%;
+    transition: all 0.25s ease;
+}
+.d_page_radio:hover {
+    border: none;
+    background-color: var(--theme-green);
+}
+.d_page_active {
+    border: none;
+    background-color: var(--theme-green);
+}
+
 /* discount */
 .happy-hours {
     font-family: "Lemon Tuesday Regular";
@@ -692,12 +719,6 @@
     position: absolute;
     bottom: 50%;
     right: 120px;
-}
-
-.discount_pagination {
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 60px !important;
 }
 
 .social_hover {
